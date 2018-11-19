@@ -1,0 +1,111 @@
+<tw-storydata name="Mining on Mars" startnode="27" creator="Twine" creator-version="2.2.1" ifid="428C3EF8-6176-4A06-9989-AA1E44602514" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
+
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Water" tags="" position="364,325" size="100,100">(set: $inventory to (&quot;water&quot;))
+
+[[Proceed|Start Journey - Choose Location]]</tw-passagedata><tw-passagedata pid="2" name="Plant" tags="" position="860,342" size="100,100">(set: $inventory to (&quot;plant&quot;))
+
+[[Proceed|Start Journey - Choose Location]]
+
+
+</tw-passagedata><tw-passagedata pid="3" name="Olympus Mons" tags="" position="311,626" size="100,100">Olympus Mons is a shield volcano on Mars and it is the largest volcano in the Solar System. Located in the Tharsis region of the planet along with three other large volcanoes, Olympus Mons measures an incredible 27 km in height and is 3 times taller than Mount Everest.
+
+[[Choice 1|1.1.1]]
+[[Choice 2|1.1.2 Accept the gift]]</tw-passagedata><tw-passagedata pid="4" name="Ghost Dunes" tags="" position="724,708" size="100,100">
+
+[[Chase after the ghost|Chase after the ghost]]
+[[Choice 2|2.2]]
+(if: $inventory is robot&quot;)[[Choice 3|Robot Survey]]</tw-passagedata><tw-passagedata pid="5" name="1.1.1" tags="" position="139,803" size="100,100">[[Choice 1|Ending 3 Depression]]
+[[Choice 2|1.1.1.1]]</tw-passagedata><tw-passagedata pid="6" name="1.1.2 Accept the gift" tags="" position="333,838" size="100,100">[[Choice 1|Ending 4 Radiation Poisoned]]
+[[Choice 2|Ending 5 Food Poisioning]]</tw-passagedata><tw-passagedata pid="7" name="Chase after the ghost" tags="" position="816,895" size="100,100">[[Choice 1|Ending 8 Starvation]]
+[[Choice 2|2.1.1]]</tw-passagedata><tw-passagedata pid="8" name="2.2" tags="" position="948,786" size="100,100">&lt;&lt;if $body is &quot;wounded&quot;&gt;&gt;You are &lt;&lt;if $blood &lt;= 5&gt;&gt;about to die&lt;&lt;else&gt;&gt;bleeding&lt;&lt;endif&gt;&gt;. Seek help!&lt;&lt;endif&gt;&gt;
+
+[[Investigate |2.2.1]]
+[[Run away | Run away]]
+[[Choice 2 | Ending 1 Suffocation]]</tw-passagedata><tw-passagedata pid="9" name="2.2.1" tags="" position="1408,953" size="100,100">[[Choice 1|2.2.1.1]]
+[[Choice 2|Ending 11 disease]]</tw-passagedata><tw-passagedata pid="10" name="2.2.1.1" tags="" position="1409,1203" size="100,100">[[Choice 1|Ending 14 Marriage]]
+[[Choice 2|Ending 15 Millionaire]]</tw-passagedata><tw-passagedata pid="11" name="Ending 8 Starvation" tags="" position="681,1130" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name="2.1.1" tags="" position="925,1027" size="100,100">[[Choice 1|Ending 10 Explosion]]
+[[Choice 2|2.1.1.2]]</tw-passagedata><tw-passagedata pid="13" name="Ending 14 Marriage" tags="" position="1253,1471" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="14" name="Ending 15 Millionaire" tags="" position="1479,1484" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="15" name="Ending 11 disease" tags="" position="1243,1266" size="100,100">have to exercise for two hours a day to prevent muscle loss, but their bones still lose calcium over time, and they don’t recover until they come back to Earth.)</tw-passagedata><tw-passagedata pid="16" name="Ending 4 Radiation Poisoned" tags="" position="337,1373" size="100,100">Radiation is the the most obvious lethal force on Mars, so much so that there was actually a study done to determine whether The Martian’s fictional NASA astronaut would actually survive given he touched down on a mission in the year 2035. Most of the Martian atmosphere has been brutally stripped away by solar winds. Unlike Earth, Mars is missing a strong magnetic field, which leaves it vulnerable to solar storms. No magnetic field and almost no atmosphere mean the surface is being showered with solar particles and cosmic rays. The intense radiation that gets through will kill you in months. </tw-passagedata><tw-passagedata pid="17" name="Ending 5 Food Poisioning" tags="" position="523,1340" size="100,100">Alien gift food without understanding human physiology
+Speaking of things you shouldn’t ever be breathing, you’d better keep your helmet screwed on at all times because dust is floating around positively everywhere. Breathe it in and your lungs will eventually fail from all the abrasive and fine-grained particles that will scrape relentlessly at the insides of your lungs. Not to mention this dust is highly toxic.
+poisoning and pulmonary hemorrhage.</tw-passagedata><tw-passagedata pid="18" name="Ending 3 Depression" tags="" position="45,1013" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="19" name="1.1.1.1" tags="" position="221,1024" size="100,100">[[Choice 1|Ending 6 Killed]]
+[[Choice 2|Ending 7 Hypothermia]]</tw-passagedata><tw-passagedata pid="20" name="Ending 6 Killed" tags="" position="43,1261" size="100,100">Conditions:
+Not enough charm
+Not enough luck</tw-passagedata><tw-passagedata pid="21" name="Ending 7 Hypothermia" tags="" position="180,1301" size="100,100">Mars is also freezing. At its equator, a summer day that registers at 70 degrees Fahrenheit is actually considered a temperature high. Even in the middle of July, what seems like a warm, breezy weather (those breezes are probably deadly solar winds) will plunge to negative 80 degrees Fahrenheit. You’ll end up as a human popsicle if your space suit doesn’t have the right insulation. </tw-passagedata><tw-passagedata pid="22" name="Count (30) - at least 8 passages per branch ending" tags="" position="31,23" size="200,100">Based on &#39;Escape from the Haunted Warehouse&#39; - CYOA #185
+30 Nodes
+15 Endings
+
+Works best with Choose Your Own Adventure style.
+
+This is both the simplest structure, and the one capable of the most variety in story. It lends itself well to improvisational writing: describe a situation, think of two reactions, then see where they lead you!
+
+Make sure to have a mix of &#39;good&#39; and &#39;bad&#39; endings. Some CYOA books have one &#39;ideal&#39; ending, while others are written in such a way that no one path is &#39;better&#39; than any other. Pick an approach and experiment!
+
+In this template, every passage has two choices. This is in the style of the classic CYOA books.
+
+You =&gt; need =&gt; go =&gt; search =&gt; find =&gt; take (lowest point - prepare to return) =&gt; return(resistance to the attempt to return) =&gt; change (master of both worlds, adapted to the strange environment and gained power)
+ordinary world and call to adventure
+refusal of the call
+meeting the mentor
+road of trials
+approach to the inmost cave
+meeting the shadow self
+ordeal: showdown / climax
+elixir/reward
+
+weird kiss, holographic princess</tw-passagedata><tw-passagedata pid="23" name="Ending 10 Explosion" tags="" position="741,1360" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="2.1.1.2" tags="" position="956,1194" size="100,100">[[Choice 1|Ending 12 Escape]]
+[[Choice 2|Ending 13 Colony]]</tw-passagedata><tw-passagedata pid="25" name="Ending 12 Escape" tags="" position="910,1383" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="26" name="Ending 13 Colony" tags="" position="1083,1366" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name="Naming" tags="" position="635,0" size="200,100">(put: (prompt: &quot;Hello adventurer, what&#39;s your name?&quot;, &quot;&quot;) into $name)
+Your name is (print: $name).
+
+[[Play the Genetic Lottery | Genetic Lottery]]</tw-passagedata><tw-passagedata pid="28" name=" Genetic Lottery" tags="" position="681,113" size="100,100">&lt;img src=&quot;https://pbs.twimg.com/media/DqSy3kAWkAgdzvo.jpg&quot;
+alt=&quot;alien&quot; /&gt;
+(set: $strength to (random: 1, 10))(set: $charisma to (random: 1, 10))
+(set: $intelligence to (random: 1, 10))(set: $endurance to (random: 1, 10))(set: $perception to (random: 1, 10))(set: $agility to (random: 1, 10))
+(set: $luck to (random: 1, 10))
+You strength is $strength, your charisma is $charisma, your intelligence is $intelligence, your endurance is $endurance, your perception is $perception, your agility is $agility and your luck is $luck.
+
+**Your special talent** is (either: &quot;Hacking&quot;, &quot;Robotics&quot;, &quot;Alien Physiology&quot;).
+**Your skills include: ** (either:&quot;engineering&quot;, &quot;programming&quot;, &quot;gardening&quot;, &quot;medicine&quot;, &quot;spacecraft operation&quot;) and (either: &quot;cooking&quot;, &quot;navigation&quot;, &quot;armed combat&quot;, &quot;Camouflage Make-up&quot;, &quot;being the life of the party&quot;).
+
+[[Packing Choice]]</tw-passagedata><tw-passagedata pid="29" name="Power Source" tags="" position="684.3333333333334,395.3333333333333" size="100,100">(set: $inventory to (&quot;power&quot;))
+
+[[Proceed|Start Journey - Choose Location]]</tw-passagedata><tw-passagedata pid="30" name="Robot" tags="" position="1062,340" size="100,100">Survey the landscape
+
+(set: $inventory to (&quot;robot&quot;))
+[[Proceed|Start Journey - Choose Location]]
+</tw-passagedata><tw-passagedata pid="31" name="Packing Choice" tags="" position="670,233" size="100,100">You chose to embark on an expedition to a mining town in Mars. Mars is a harsh and desolate place - if something goes wrong you&#39;ll have no hope of rescue. Need: Money
+
+This was the start of the gold rush, which lasted from 1849 to 1856.
+Few miners made their fortune from gold. But they spent the savings they had used to go mining with, and this kick-started the California economy. When the men finally gave up their hopes for gold, they moved onto the land and settled there as farmers.
+
+In time, mining camps such as Virginia City became large towns on Mars.
+
+&quot;$name, Mars is crawling with much worse fates than having a piano fall on your head. You can only choose one item to take with you on this dangerous journey,&quot; your robot helper tells you. &quot;What is it going to be?&quot;
+
+[[Water purifier|Water]]? [[Plant Seeds|Plant]]? [[A power source|Power Source]]? [[Robot Drone|Robot]]?  [[Mars Bar|Mars Bar]]?</tw-passagedata><tw-passagedata pid="32" name="Mars Bar" tags="" position="549,355" size="100,100">You never know who you will meet on red planet but a Mars bar will be a goodwill gift to present to the Martians. Everyone loves chocolate!
+(set: $inventory to (&quot;chocolate&quot;))
+[[Proceed|Start Journey - Choose Location]]
+
+</tw-passagedata><tw-passagedata pid="33" name="Start Journey - Choose Location" tags="" position="650,582" size="100,100">The best places on Mars for valuable ores are volcanoes, impact craters and lava flows. Olympus Mons is a shield volcano on Mars and it is the largest volcano in the Solar System. 
+
+[[Olympus Mons|Olympus Mons]]
+[[Ghost Dunes|Ghost Dunes]]
+[[Medusae Fossae|Medusae Fossae]]
+[[Hale Crater|Hale Crater]]</tw-passagedata><tw-passagedata pid="34" name=" Ending 1 Suffocation" tags="" position="1178,969" size="100,100">you are unprotected..your blood boils, Martian gases that got into your bloodstream would dissolve into bubbles not unlike soda fizz. like some twisted science fair experiment, you turn into something of a human soda can and fizz to death.
+The atmosphere is almost completely carbon dioxide. Compare the 78 percent nitrogen and 21 percent oxygen we breathe in on Earth to a lethal 95 percent carbon dioxide. If your oxygen supply ran out, it would be like inhaling exhaust fumes.</tw-passagedata><tw-passagedata pid="35" name="Medusae Fossae" tags="" position="544.3333333333334,761.3333333333334" size="100,100">Medusae Fossae is one of the weirdest locations on Mars, it holds evidence of some sort of a UFO crash. it is a huge volcanic deposit, some one-fifth of the size of the United States. Over time, winds sculpted the rocks into some beautiful formations. But researchers will need more study to learn how these volcanoes formed Medusae Fossae. The formation may have formed from immensely huge volcanic eruptions taking place hundreds of times over 500 million years. These eruptions would have warmed the Red Planet&#39;s climate as greenhouse gases from the volcanoes drifted into the atmosphere.
+
+[[Investigate | Investigate ]]</tw-passagedata><tw-passagedata pid="36" name="Hale Crater" tags="" position="1034,605" size="100,100">Mars is host to strange features called recurring slope lineae, which tend to form on the sides of steep craters during warm weather. It&#39;s hard to figure out what these RSL are, though. Pictures shown here from Hale Crater (as well as other locations) show spots where spectroscopy picked up signs of hydration. In 2015, NASA initially announced that the hydrated salts must be signs of running water on the surface, but later research said the RSL could be formed from atmospheric water or dry flows of sand. In reality, we may have to get up close to these RSL to see what their true nature is. But there&#39;s a difficulty — if the RSL indeed host alien microbes, we wouldn&#39;t want to get too close in case of contamination. While NASA figures out how to investigate under its planetary protection protocols, future human explorers may have to admire these mysterious features from afar, using binoculars.</tw-passagedata><tw-passagedata pid="37" name="Robot Survey" tags="" position="693,891" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="38" name=" Investigate " tags="" position="540.6666666666666,942" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="39" name=" Run away" tags="" position="1051,1080" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
