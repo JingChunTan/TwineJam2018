@@ -1,0 +1,258 @@
+<tw-storydata name="The Only Way Is Mars" startnode="26" creator="Twine" creator-version="2.2.1" ifid="428C3EF8-6176-4A06-9989-AA1E44602514" zoom="0.6" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"> @import 'https://fonts.googleapis.com/css?family=Redressed|Coda';
+ @import 'https://fonts.googleapis.com/css?family=Titillium+Web';
+ @import 'https://fonts.googleapis.com/css?family=Audiowide';
+ @import 'https://fonts.googleapis.com/css?family=Patua+One';
+ @import 'https://fonts.googleapis.com/css?family=Poiret+One';
+
+body {
+	background-image: url("https://3bonlp1aiidtbao4s10xacvn-wpengine.netdna-ssl.com/wp-content/uploads/2018/02/Mars-featured-image-1068x818.jpg");
+	background-size: 100%;
+}
+
+tw-story {
+
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 10%, rgba(0,0,0,0.45) 87%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 10%,rgba(0,0,0,0.45) 87%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 10%,rgba(0,0,0,0.45) 87%,rgba(0,0,0,0) 100%);
+  	display: flex;
+
+}
+
+
+tw-passage {
+	color: rgba(255,255,255,0.75);
+	text-shadow: 0px 0px 3px rgba(255,255,255,0.8);
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h3{
+	font-family: 'Poiret One', cursive;
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+    position: relative;
+}
+
+span.name{
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+    position: relative;
+}
+
+span.stats{
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+    position: relative;
+}
+
+name{
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+    position: relative;
+}
+
+tw-link {
+	font-family: 'Poiret One', cursive;
+	font-size: 36px;
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+tw-passage.deleted {
+	font-family: 'Poiret One', cursive;
+	font-size: 36px;
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+	padding-left: 5px;
+	padding-right: 5px;
+  	text-decoration: line-through;
+}
+
+.enchantment-link:hover, tw-link:hover {
+	color: rgba(255,255,127, 0.9);
+	text-shadow: 0px 0px 15px yellow;
+	padding-left: 5px;
+	padding-right: 5px;  
+}
+
+enchantment-link.visited, tw-link.visited {
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;	
+}
+
+enchantment-link.visited:hover, tw-link.visited:hover {
+	color: rgba(255,255,127, 0.9);
+	text-shadow: 0px 0px 15px yellow;
+	padding-left: 5px;
+	padding-right: 5px;  
+}
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Water" tags="" position="286.6666666666667,547.6666666666667" size="100,100">(set: $inventory to (&quot;water&quot;))
+
+Description of water
+
+[[Continue|Start Journey - Choose Location]]</tw-passagedata><tw-passagedata pid="2" name="Plant" tags="" position="879.6666666666666,574.6666666666667" size="100,100">(set: $inventory to (&quot;plant&quot;))
+
+Description of plant
+
+[[Continue|Start Journey - Choose Location]]</tw-passagedata><tw-passagedata pid="3" name="Olympus Mons" tags="" position="373.6666666666667,811.3333333333334" size="100,100">Olympus Mons is a shield volcano on Mars and it is the largest volcano in the Solar System. Located in the Tharsis region of the planet along with three other large volcanoes, Olympus Mons measures an incredible 27 km in height and is 3 times taller than Mount Everest.
+
+[[Choice 2|1.1.2 Accept the gift]]
+(if: $inventory is &quot;robot&quot;)[[Survey the landscape with your Robot|Robot Survey Olympus Mons]]
+</tw-passagedata><tw-passagedata pid="4" name="Noctis Labyrinthus" tags="" position="862.6666666666666,950.3333333333333" size="100,100">You had walked the whole day and was tired and hungry. You found yourself lost in the midst of a large plain, searching in vain for some sign of life.
+This was the loneliest time. In the deep silence of midnight, the thrill and excitemnet cooled, all that remained was a sense of desolation.
+At last, after wandering about for hours, you saw a culmp of trees in the distance. and through the trees you caught sight of the glimmer of a single ray of light. keeping the light before your eyse, you dragged your weary, aching feet as quickly as you could towards the spot soon came to a miserable looking little shelter.
+
+[[Walk to the shiny fog|Ending 8 Starvation]]
+[[Walk towards the shelter|Alien Killer Shelter]]
+(if: $inventory is &quot;robot&quot;)[[Survey the landscape with your Robot|Robot Survey Noctis Labyrinthus]]</tw-passagedata><tw-passagedata pid="5" name="Robot Survey Olympus Mons" tags="" position="139,803" size="100,100">[[Choice 1|Ending 3 Depression]]
+[[Choice 2|1.1.1.1]]</tw-passagedata><tw-passagedata pid="6" name="1.1.2 Accept the gift" tags="" position="349.6666666666667,1024.6666666666667" size="100,100">[[Choice 1|Ending 4 Radiation Poisoned]]
+[[Choice 2|Ending 5 Food Poisioning]]</tw-passagedata><tw-passagedata pid="7" name="2.2" tags="" position="1409.6666666666667,894" size="100,100">&lt;&lt;if $body is &quot;wounded&quot;&gt;&gt;You are &lt;&lt;if $blood &lt;= 5&gt;&gt;about to die&lt;&lt;else&gt;&gt;bleeding&lt;&lt;endif&gt;&gt;. Seek help!&lt;&lt;endif&gt;&gt;
+
+[[Investigate |2.2.1]]
+[[Choice 2 | Ending 1 Suffocation]]</tw-passagedata><tw-passagedata pid="8" name="2.2.1" tags="" position="1799,906" size="100,100">[[Choice 1|2.2.1.1]]
+[[Choice 2|Ending 11 disease]]</tw-passagedata><tw-passagedata pid="9" name="2.2.1.1" tags="" position="1800,1156" size="100,100">[[Choice 1|Ending 14 Marriage]]
+[[Choice 2|Ending 15 Millionaire]]</tw-passagedata><tw-passagedata pid="10" name="Ending 8 Starvation" tags="" position="1132.6666666666667,1047.3333333333333" size="100,100">Spent and exhausted, you fell to your knees. </tw-passagedata><tw-passagedata pid="11" name="Alien Killer Shelter" tags="" position="1085.6666666666667,1260.6666666666665" size="100,100">[[Choice 1|Ending 10 Explosion]]
+[[Charm Alien|Talk to Alien Killer]]</tw-passagedata><tw-passagedata pid="12" name="Ending 14 Marriage" tags="" position="1644,1365" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="13" name="Ending 15 Millionaire" tags="" position="1870,1437" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="14" name="Ending 11 disease" tags="" position="1634,1219" size="100,100">have to exercise for two hours a day to prevent muscle loss, but their bones still lose calcium over time, and they don’t recover until they come back to Earth.)</tw-passagedata><tw-passagedata pid="15" name="Ending 4 Radiation Poisoned" tags="" position="353.6666666666667,1559.6666666666665" size="100,100">Radiation is the the most obvious lethal force on Mars, so much so that there was actually a study done to determine whether The Martian’s fictional NASA astronaut would actually survive given he touched down on a mission in the year 2035. Most of the Martian atmosphere has been brutally stripped away by solar winds. Unlike Earth, Mars is missing a strong magnetic field, which leaves it vulnerable to solar storms. No magnetic field and almost no atmosphere mean the surface is being showered with solar particles and cosmic rays. The intense radiation that gets through will kill you in months. </tw-passagedata><tw-passagedata pid="16" name="Ending 5 Food Poisioning" tags="" position="539.6666666666666,1526.6666666666665" size="100,100">Alien gift food without understanding human physiology
+Speaking of things you shouldn’t ever be breathing, you’d better keep your helmet screwed on at all times because dust is floating around positively everywhere. Breathe it in and your lungs will eventually fail from all the abrasive and fine-grained particles that will scrape relentlessly at the insides of your lungs. Not to mention this dust is highly toxic.
+poisoning and pulmonary hemorrhage.</tw-passagedata><tw-passagedata pid="17" name="Ending 3 Depression" tags="" position="45,1013" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name="1.1.1.1" tags="" position="237.66666666666666,1210.6666666666665" size="100,100">[[Choice 1|Ending 1 Killed by Alien]]
+[[Choice 2|Ending 7 Hypothermia]]</tw-passagedata><tw-passagedata pid="19" name="Ending 1 Killed by Alien" tags="" position="43,1261" size="100,100">Conditions:
+Not enough charm
+Not enough luck
+
+Killed by ALien
+=&gt;&lt;=
+###Game over.
+=&gt;&lt;=
+(link: &quot;Restart&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="20" name="Ending 7 Hypothermia" tags="" position="196.66666666666666,1487.6666666666665" size="100,100">Mars is also freezing. At its equator, a summer day that registers at 70 degrees Fahrenheit is actually considered a temperature high. Even in the middle of July, what seems like a warm, breezy weather (those breezes are probably deadly solar winds) will plunge to negative 80 degrees Fahrenheit. You’ll end up as a human popsicle if your space suit doesn’t have the right insulation. </tw-passagedata><tw-passagedata pid="21" name="Count (30) - at least 8 passages per branch ending" tags="" position="31,23" size="200,100">Based on &#39;Escape from the Haunted Warehouse&#39; - CYOA #185
+30 Nodes
+15 Endings
+
+Works best with Choose Your Own Adventure style.
+
+This is both the simplest structure, and the one capable of the most variety in story. It lends itself well to improvisational writing: describe a situation, think of two reactions, then see where they lead you!
+
+Make sure to have a mix of &#39;good&#39; and &#39;bad&#39; endings. Some CYOA books have one &#39;ideal&#39; ending, while others are written in such a way that no one path is &#39;better&#39; than any other. Pick an approach and experiment!
+
+In this template, every passage has two choices. This is in the style of the classic CYOA books.
+
+You =&gt; need =&gt; go =&gt; search =&gt; find =&gt; take (lowest point - prepare to return) =&gt; return(resistance to the attempt to return) =&gt; change (master of both worlds, adapted to the strange environment and gained power)
+ordinary world and call to adventure
+refusal of the call
+meeting the mentor
+road of trials
+approach to the inmost cave
+meeting the shadow self
+ordeal: showdown / climax
+elixir/reward
+
+weird kiss, holographic princess</tw-passagedata><tw-passagedata pid="22" name="Ending 10 Explosion" tags="" position="757.6666666666666,1471.3333333333333" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Talk to Alien Killer" tags="" position="1018.6666666666666,1434" size="100,100">Evening! I am a traveller. Please excuse me but I have lost my way and don&#39;t konw what to do - I have nowhere to rest tonight..would you be kind enough to let me spend a night in your shelter?
+
+[[Charm | Charm Alien]]
+[[Choice 2|Ending 13 Colony]]
+(if: $inventory is (&quot;chocolate&quot;))[[Offer Mars Bar|Offer Chocolate]]</tw-passagedata><tw-passagedata pid="24" name="Ending 12 Escape" tags="" position="1327.6666666666667,2004.6666666666665" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="25" name="Ending 13 Colony" tags="" position="1102.6666666666667,1698.6666666666665" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="26" name="Title" tags="" position="610.9999999999999,0" size="200,100">[[Play Game | Naming]]
+A Game by Spiderlili</tw-passagedata><tw-passagedata pid="27" name="Genetic Lottery" tags="" position="661,263.00000000000006" size="100,100">(set: $strength to (random: 1, 10))(set: $charisma to (random: 1, 10))
+(set: $intelligence to (random: 1, 10))(set: $endurance to (random: 1, 10))(set: $perception to (random: 1, 10))(set: $agility to (random: 1, 10))
+(set: $luck to (random: 1, 10))
+(set:$eyecolour to (either: &quot;Blue&quot;, &quot;Brown&quot;, &quot;Hazel&quot;, &quot;Green&quot;, &quot;Grey&quot;))
+(set:$haircolour to (either: &quot;Brown&quot;,&quot;Black&quot;,&quot;Blond&quot;,&quot;Red&quot;,&quot;Auburn&quot;))
+
+Your name is: &lt;span class = &quot;name&quot;&gt;(print: $name) &lt;/span&gt;
+
+You &lt;span class = &quot;stats&quot;&gt;strength&lt;/span&gt; is $strength, your &lt;span class = &quot;stats&quot;&gt;charisma &lt;/span&gt; is $charisma, your &lt;span class = &quot;stats&quot;&gt;intelligence &lt;/span&gt; is $intelligence, your &lt;span class = &quot;stats&quot;&gt;agility&lt;/span&gt; is $agility and your &lt;span class = &quot;stats&quot;&gt;luck &lt;/span&gt; is $luck.
+
+Your &lt;span class = &quot;stats&quot;&gt;eye colour&lt;/span&gt; is $eyecolour.
+Your &lt;span class = &quot;stats&quot;&gt;hair colour&lt;/span&gt; is $haircolour.
+
+**Your special talent** is &lt;span class = &quot;stats&quot;&gt;(either: &quot;Hacking&quot;, &quot;Robotics&quot;, &quot;Alien Physiology&quot;). &lt;/span&gt;
+**Your skills include: ** &lt;span class = &quot;stats&quot;&gt;(either:&quot;engineering&quot;, &quot;Martian geology&quot;, &quot;gardening&quot;, &quot;spacecraft operation&quot;) &lt;/span&gt; and &lt;span class = &quot;stats&quot;&gt;(either: &quot;cooking&quot;, &quot;armed combat&quot;, &quot;Camouflage Make-up&quot;, &quot;being the life of the party&quot;).&lt;/span&gt;
+
+[[Start|Packing Choice]]
+[[Play the Genetic Lottery Again|Genetic Lottery]]
+[[Rename|Rename]] </tw-passagedata><tw-passagedata pid="28" name="Power Source" tags="" position="673.6666666666666,567.6666666666667" size="100,100">(set: $inventory to (&quot;power&quot;))
+Description of power source
+[[Continue|Start Journey - Choose Location]]</tw-passagedata><tw-passagedata pid="29" name="Robot" tags="" position="1091.6666666666667,569.6666666666667" size="100,100">Description of robot
+
+(set: $inventory to (&quot;robot&quot;))
+[[Continue|Start Journey - Choose Location]]</tw-passagedata><tw-passagedata pid="30" name="Packing Choice" tags="" position="647.6666666666666,439.66666666666674" size="100,100">&quot;Ladies and Gentlemen! I present you - &quot;&lt;span class = &quot;name&quot;&gt;$name&lt;/span&gt;&quot;
+
+You are on your favourite reality show, &quot;The Only Way Is Mars&quot;, where the contestants are stranded on Mars with limited resources to survive and try to make a fortune. You are in heavy debt and you are two months behind on your rent, so unless you can get your hands on a lot of money, you&#39;ll be homeless and in the streets by the end of the week.
+
+&quot;&lt;span class = &quot;name&quot;&gt;$name&lt;/span&gt;, as you&#39;re well aware, Mars is a very harsh and desolated place - to add to the challenge, you can only choose one thing to take with you on this dangerous journey.&quot; Qwerty the Robot reality show host warns you. &quot;What is it going to be?&quot;
+
+[[Water purifier|Water]]? [[Plant Seeds|Plant]]? [[A power source|Power Source]]? [[Robot Drone|Robot]]?  [[Mars Bar|Mars Bar]]?</tw-passagedata><tw-passagedata pid="31" name="Mars Bar" tags="" position="498.6666666666667,538.3333333333334" size="100,100">Magnificent choice - you never know who you will meet on red planet but a Mars bar will be a goodwill gift to present to the Martians. Everyone loves chocolate!
+
+(set: $inventory to (&quot;chocolate&quot;))
+[[Continue|Start Journey - Choose Location]]
+
+</tw-passagedata><tw-passagedata pid="32" name="Start Journey - Choose Location" tags="" position="579.6666666666666,727" size="100,100">Where do you want to go?
+
+(if: $OlympusMons is &quot;done&quot;)[&lt;tw-passage class = &quot;deleted&quot;&gt;Olympus Mons&lt;/div&gt;](else:)[[[Olympus Mons|Olympus Mons]]]
+(if: $NoctisLabyrinthus is &quot;done&quot;)[&lt;tw-passage class = &quot;deleted&quot;&gt;Noctis Labyrinthus&lt;/div&gt;](else:)[[[Noctis Labyrinthus|Noctis Labyrinthus]]]
+(if: $MedusaeFossae is &quot;done&quot;)[&lt;tw-passage class = &quot;deleted&quot;&gt;Medusae Fossae&lt;/div&gt;](else:)[[[Medusae Fossae|Medusae Fossae]]]
+[[Give me some hints|Hints]]</tw-passagedata><tw-passagedata pid="33" name=" Ending 1 Suffocation" tags="" position="1431,1004" size="100,100">you are unprotected..your blood boils, Martian gases that got into your bloodstream would dissolve into bubbles not unlike soda fizz. like some twisted science fair experiment, you turn into something of a human soda can and fizz to death.
+The atmosphere is almost completely carbon dioxide. Compare the 78 percent nitrogen and 21 percent oxygen we breathe in on Earth to a lethal 95 percent carbon dioxide. If your oxygen supply ran out, it would be like inhaling exhaust fumes.</tw-passagedata><tw-passagedata pid="34" name="Medusae Fossae" tags="" position="669.6666666666666,920.3333333333333" size="100,100">Medusae Fossae is a huge volcanic deposit. Over time, winds sculpted the rocks into some beautiful formations. researchers will need more study to learn how these volcanoes formed Medusae Fossae. The formation may have formed from immensely huge volcanic eruptions taking place hundreds of times over 500 million years. These eruptions would have warmed the Red Planet&#39;s climate as greenhouse gases from the volcanoes drifted into the atmosphere.
+
+[[Investigate | Investigate ]]
+(if: $inventory is &quot;robot&quot;)[[Survey the landscape with your Robot|Robot Survey Medusae Fossae]]</tw-passagedata><tw-passagedata pid="35" name="Robot Survey Noctis Labyrinthus" tags="" position="882.6666666666666,1163.6666666666665" size="100,100">Discovered alien shelter
+
+[[Walk towards the shelter|Alien Killer Shelter]]</tw-passagedata><tw-passagedata pid="36" name=" Investigate " tags="" position="549.6666666666666,1121.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name=" Run away" tags="" position="686.6666666666666,2027.6666666666665" size="100,100">&quot;Stop! Stop..why did you look into the forbidden room?&quot;
+
+[[Rescued | Rescued ]]</tw-passagedata><tw-passagedata pid="38" name=" Charm Alien" tags="" position="945.6666666666666,1627.3333333333333" size="100,100">Present Mars bar
+OK, you can stay.
+
+[[I&#39;ll find some resources for the night. | Alien Killer Away]]
+[[Thank you so much. | Alien Killer Away]]</tw-passagedata><tw-passagedata pid="39" name=" Alien Killer Away" tags="" position="895.6666666666666,1840.6666666666665" size="100,100">[[Look in the room | Look in the Underground Room ]]
+[[Stay there | Ending 1 Killed by Alien]]</tw-passagedata><tw-passagedata pid="40" name=" Look in the Underground Room " tags="" position="772.6666666666666,1921.6666666666665" size="100,100">[[Run Away. | Run away]]</tw-passagedata><tw-passagedata pid="41" name=" Ending 1 Killed by Alien" tags="" position="1015.6666666666666,1988.6666666666665" size="100,100">Conditions:
+Not enough charm
+Not enough luck
+
+Killed by ALien
+=&gt;&lt;=
+###Game over.
+=&gt;&lt;=
+(link: &quot;Restart&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="42" name=" Rescued " tags="" position="566.6666666666666,2157.666666666667" size="100,100">(set: $NoctisLabyrinthus to (&quot;done&quot;))
+Start Journey - Choose Location
+Change the Ghost Dunes string - crossed lines and unclickable
+Set forward for another part of Mars.
+
+[[Choose a place |Start Journey - Choose Location]]</tw-passagedata><tw-passagedata pid="43" name="Hints" tags="" position="904.6666666666666,842.6666666666667" size="100,100">The best places on Mars for valuable ores are volcanoes and lava flows. 
+
+**Olympus Mons ** is the largest volcano in the Solar System and may be biding its time until the next eruption. The mountain so tall that it is the only thing visibly protruding through Mars&#39;s massive dust storms.
+
+**Noctis Labyrinthus ** is known for the deep patterns carved from lava channels and its ghost dunes - there might be surprises inside. From time to time, many travelers disappeared and were never heard of more.
+
+**Medusae Fossae ** is one of the weirdest locations on Mars. An exotic terrain formed from huge volcanic eruptions taking place hundreds of times over 500 million years, it holds evidence of some sort of a UFO crash.
+
+[[I want to go to Olympus Mons|Olympus Mons]]
+[[I want to go to Noctis Labyrinthus|Noctis Labyrinthus]]
+[[I want to go to Medusae Fossae|Medusae Fossae]]</tw-passagedata><tw-passagedata pid="44" name="Robot Survey Medusae Fossae" tags="" position="673.6666666666666,1133.6666666666665" size="100,100">Discovered</tw-passagedata><tw-passagedata pid="45" name="Offer Chocolate" tags="" position="782.6666666666666,1684.6666666666665" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="46" name=" Naming" tags="" position="667.6666666666665,126.33333333333337" size="100,100">(put: (prompt: &quot;Hello adventurer, what&#39;s your name?&quot;, &quot;&quot;) into $name)
+Your name is: &lt;span class = &quot;name&quot;&gt;(print: $name) &lt;/span&gt;
+[[Play the Genetic Lottery |Genetic Lottery]]</tw-passagedata><tw-passagedata pid="47" name="Rename" tags="" position="887.6666666666666,332.6666666666667" size="100,100">(put: (prompt: &quot;Hello adventurer, what&#39;s your name?&quot;, &quot;&quot;) into $name)
+
+Your name is: &lt;span class = &quot;name&quot;&gt;(print: $name) &lt;/span&gt;
+
+You &lt;span class = &quot;stats&quot;&gt;strength&lt;/span&gt; is $strength, your &lt;span class = &quot;stats&quot;&gt;charisma &lt;/span&gt; is $charisma, your &lt;span class = &quot;stats&quot;&gt;intelligence &lt;/span&gt; is $intelligence, your &lt;span class = &quot;stats&quot;&gt;agility&lt;/span&gt; is $agility and your &lt;span class = &quot;stats&quot;&gt;luck &lt;/span&gt; is $luck.
+
+Your &lt;span class = &quot;stats&quot;&gt;eye colour&lt;/span&gt; is $eyecolour.
+Your &lt;span class = &quot;stats&quot;&gt;hair colour&lt;/span&gt; is $haircolour.
+
+[[Start|Packing Choice]]
+[[Play the Genetic Lottery Again|Genetic Lottery]]
+[[Rename|Rename]] </tw-passagedata></tw-storydata>
