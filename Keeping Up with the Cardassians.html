@@ -115,7 +115,9 @@ enchantment-link.visited:hover, tw-link.visited:hover {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -145,13 +147,13 @@ enchantment-link.visited:hover, tw-link.visited:hover {
 [[Let me choose again.|Rechoose Gift]]</tw-passagedata><tw-passagedata pid="2" name="Noctis Labyrinthus" tags="" position="713,1550" size="100,100">After you wake up, you realise that you have crash landed on an unfamiliar terrain. Your spaceship is totally broken and you need to find some help. You climb out of the ship and found yourself lost in the midst of a maze-like valley. Etched with an intricate pattern of landslides and wind-blown dunes, the planet looks completely desolated. To your right, there is a massive landslide, extending into a seemingly bottomless pit. In the distance, you caught sight of the glimmer of light through the gaps between the ghost dunes. 
 
 [[Walk towards the bottomless pit|Ending 8 Exhaustion]]
-[[Walk towards the ray of light|Alien Killer Shelter]]</tw-passagedata><tw-passagedata pid="3" name="Ending 8 Exhaustion" tags="" position="847.3333333333334,1673" size="100,100">You come closer to the edge of the pit and lean forward. A powerful force draws you inside. You try in vain to get out of the pit but you can&#39;t seem to find a way.
+[[Walk towards the ray of light|Alien Killer Shelter]]</tw-passagedata><tw-passagedata pid="3" name="Ending 8 Exhaustion" tags="" position="847,1673" size="100,100">You come closer to the edge of the pit and lean forward. A powerful force draws you inside. You try in vain to get out of the pit but you can&#39;t seem to find a way.
 
 Spent and exhausted, you fell to your knees and die of exhaustion.
 
-(click:&quot;Restart&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="4" name="Alien Killer Shelter" tags="" position="603,1676" size="100,100">Keeping the light before your eyes, you dragged your weary, aching feet as quickly as you could towards the spot. After hours of walking, you came to an extravagant looking biodome made of fiber glass. 
+(link: &quot;Play Again&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="4" name="Alien Killer Shelter" tags="" position="603,1676" size="100,100">Keeping the light before your eyes, you dragged your weary, aching feet as quickly as you could towards the spot. After hours of walking, you came to an extravagant looking biodome made of fiber glass. 
 
-[[Approach the biodome and ask for help|Ask For Help]]</tw-passagedata><tw-passagedata pid="5" name="Title" tags="" position="635.3333333333333,3.3333333333333335" size="200,100">&lt;h2&gt;Keeping Up with the Cardassians&lt;/h2&gt;
+[[Approach the biodome and ask for help|Ask For Help]]</tw-passagedata><tw-passagedata pid="5" name="Title" tags="" position="635,3" size="200,100">&lt;h2&gt;Keeping Up with the Cardassians&lt;/h2&gt;
 [[Play Game|Naming]]</tw-passagedata><tw-passagedata pid="6" name="Genetic Lottery" tags="" position="667,257" size="100,100">(set: $strength to (random: 1, 10))(set: $charisma to (random: 1, 10))(set: $intelligence to (random: 1, 10))(set: $endurance to (random: 1, 10))(set: $perception to (random: 1, 10))(set: $agility to (random: 1, 10))(set: $luck to (random: 1, 10))(set:$eyecolour to (either: &quot;Blue&quot;, &quot;Brown&quot;, &quot;Green&quot;, &quot;Grey&quot;))(set:$haircolour to (either: &quot;Brown&quot;,&quot;Black&quot;,&quot;Blonde&quot;,&quot;Red&quot;))(set: $talent to (either: &quot;Hacking&quot;, &quot;Being the Life of the Party and charming everyone&quot;, &quot;Spacecraft&quot;))Your name is: &lt;span class = &quot;name&quot;&gt;(print: $name) &lt;/span&gt;
 
 You &lt;span class = &quot;stats&quot;&gt;strength&lt;/span&gt; is $strength, your &lt;span class = &quot;stats&quot;&gt;charisma &lt;/span&gt; is $charisma, your &lt;span class = &quot;stats&quot;&gt;intelligence &lt;/span&gt; is $intelligence, your &lt;span class = &quot;stats&quot;&gt;agility&lt;/span&gt; is $agility, your &lt;span class = &quot;stats&quot;&gt;endurance&lt;/span&gt; is $endurance, your &lt;span class = &quot;stats&quot;&gt;perception&lt;/span&gt; is $perception and your &lt;span class = &quot;stats&quot;&gt;luck &lt;/span&gt; is $luck.
@@ -166,7 +168,7 @@ Your &lt;span class = &quot;stats&quot;&gt;hair colour&lt;/span&gt; is $haircolo
 [[Rename|Rename]] </tw-passagedata><tw-passagedata pid="7" name="Hitchhiker" tags="" position="763,1010" size="100,100">(set: $inventory to (&quot;hitchhiker&quot;))A fine choice - I&#39;m sure this wonderful book will prove useful in your journeys!
 
 [[I&#39;m ready to leave this planet and go to Mars.|Start Journey]]
-[[Let me choose again.|Rechoose Gift]]</tw-passagedata><tw-passagedata pid="8" name="The call to adventure" tags="" position="650,386.6666666666667" size="100,100">&quot;Good morning, &lt;span class = &quot;name&quot;&gt;$name&lt;/span&gt;. You have one new message.&quot; 
+[[Let me choose again.|Rechoose Gift]]</tw-passagedata><tw-passagedata pid="8" name="The call to adventure" tags="" position="650,386" size="100,100">&quot;Good morning, &lt;span class = &quot;name&quot;&gt;$name&lt;/span&gt;. You have one new message.&quot; 
 
 Your virtual assistant wakes you up from deep sleep. You open your eyes slowly, feeling annoyed. You just had another realistic dream of an All-You-Can-Eat banquet that you did not want to wake up from. There were so much food - succulent ramen, glazed pizzas, lavishly layered chocolate cakes and massive burgers which are bigger than your face.. 
 
@@ -197,7 +199,7 @@ Your &lt;span class = &quot;stats&quot;&gt;hair colour&lt;/span&gt; is $haircolo
 
 [[Start|The call to adventure]]
 [[Play the Genetic Lottery Again|Genetic Lottery]]
-[[Rename|Rename]] </tw-passagedata><tw-passagedata pid="12" name="Naming" tags="" position="684.3333333333334,131.66666666666666" size="100,100">(put: (prompt: &quot;What&#39;s your name?&quot;, &quot;&quot;) into $name)
+[[Rename|Rename]] </tw-passagedata><tw-passagedata pid="12" name="Naming" tags="" position="684,131" size="100,100">(put: (prompt: &quot;What&#39;s your name?&quot;, &quot;&quot;) into $name)
 Your name is: &lt;span class = &quot;name&quot;&gt;(print: $name) &lt;/span&gt;
 [[Play the Genetic Lottery|Genetic Lottery]]</tw-passagedata><tw-passagedata pid="13" name="Confirm to Participate" tags="" position="661,862" size="100,100">**RE: Once in a lifetime opportunity: Keeping Up with the Martians**
 
@@ -225,38 +227,38 @@ The doorbell suddenly rings.
 
 [[Sorry, I don&#39;t have any money.|Fail to Persuade Landlord]]
 
-[[(Charisma) You will have your money in a week.|Fail to Charm Landlord]]</tw-passagedata><tw-passagedata pid="16" name="Listen to Music" tags="" position="864.3333333333334,1282" size="100,100">You put your favourite songs on and start to fall asleep slowly. However, a strangest loud popping sound wakes you up. It&#39;s coming from outside, like a car backfiring. 
+[[(Charisma) You will have your money in a week.|Fail to Charm Landlord]]</tw-passagedata><tw-passagedata pid="16" name="Listen to Music" tags="" position="864,1282" size="100,100">You put your favourite songs on and start to fall asleep slowly. However, a strangest loud popping sound wakes you up. It&#39;s coming from outside, like a car backfiring. 
 
-[[Investigate|Crash Landing]]</tw-passagedata><tw-passagedata pid="17" name="Watch &quot;Keeping Up with the Cardassians&quot;" tags="" position="714,1280.6666666666667" size="100,100">Time to do some research and prepare yourself for what&#39;s going to come! You put &quot;Keeping Up with the Cardassians&quot; on. You have heard of this super popular reality show but you have never watched it. You see a group of ridiculously glamorous aliens waving to their screaming fans. As you&#39;re starting to get excited, you heard the strangest loud popping sound coming from the outside, like a car backfiring. 
+[[Investigate|Crash Landing]]</tw-passagedata><tw-passagedata pid="17" name="Watch &quot;Keeping Up with the Cardassians&quot;" tags="" position="714,1280" size="100,100">Time to do some research and prepare yourself for what&#39;s going to come! You put &quot;Keeping Up with the Cardassians&quot; on. You have heard of this super popular reality show but you have never watched it. You see a group of ridiculously glamorous aliens waving to their screaming fans. As you&#39;re starting to get excited, you heard the strangest loud popping sound coming from the outside, like a car backfiring. 
 
 [[Investigate|Crash Landing]]
 </tw-passagedata><tw-passagedata pid="18" name="Crash Landing" tags="" position="653,1411" size="100,100">It was a large flock of space garbage consisting of old satellites colliding into the spaceship&#39;s engines, disabling them on impact. You rush to the control room but you can&#39;t get the ship back on course. Your spaceship shook with the vibrations and is spinning out of control, suddenly it began dropping. You ran into the emergency room, put on the oxygen supply, grabbed the seat and held on tightly to brace for impact. A large crash came with incredible force, it shakes the ship as it lands and you fall unconscious. 
 
-[[A few hours later...|Noctis Labyrinthus]]</tw-passagedata><tw-passagedata pid="19" name="Life on Mars" tags="" position="563.6666666666667,1002" size="100,100">(set: $inventory to (&quot;music&quot;))You have excellent music taste! Ziggy Stardust is the most gorgeous alien ever and everyone on Mars loves him.
+[[A few hours later...|Noctis Labyrinthus]]</tw-passagedata><tw-passagedata pid="19" name="Life on Mars" tags="" position="563,1002" size="100,100">(set: $inventory to (&quot;music&quot;))You have excellent music taste! Ziggy Stardust is the most gorgeous alien ever and everyone on Mars loves him.
 
 [[I&#39;m ready to leave this planet and go to Mars.|Start Journey]]
-[[Let me choose again.|Rechoose Gift]]</tw-passagedata><tw-passagedata pid="20" name="Location Hint" tags="" position="482,1927.3333333333333" size="100,100">(set: $locationHint to true)&quot;This is Noctis Labyrinthus, the labyrinth of the night. This is an essentially unpopulated region on this planet and a very long way away from Cerberus Plain, but I love the quiet lifestyle and the beautiful maze landscape, that&#39;s why I choose to live here. &quot;
+[[Let me choose again.|Rechoose Gift]]</tw-passagedata><tw-passagedata pid="20" name="Location Hint" tags="" position="482,1927" size="100,100">(set: $locationHint to true)&quot;This is Noctis Labyrinthus, the labyrinth of the night. This is an essentially unpopulated region on this planet and a very long way away from Cerberus Plain, but I love the quiet lifestyle and the beautiful maze landscape, that&#39;s why I choose to live here. &quot;
 
 A small smirk creases Oculi&#39;s lips.
 
 (if: $locationHint is false)[[[Where am I?|Location Hint]]]
 (if: $oculiIntro is false)[[[You&#39;re a Cardassian?|Oculi Self Intro]]]
-[[Would you be kind enough to let me stay the night?|Ask to Stay]]</tw-passagedata><tw-passagedata pid="21" name="Eat" tags="" position="376,1272.6666666666667" size="100,100">You take a bite of spicy curry from a floating spoon. Over time, your taste buds have become desensitised from the shifting fluid to your head when you are in space. As a result, you can only eat spicy foods now - it&#39;s the only taste you can feel.
+[[Would you be kind enough to let me stay the night?|Ask to Stay]]</tw-passagedata><tw-passagedata pid="21" name="Eat" tags="" position="376,1272" size="100,100">You take a bite of spicy curry from a floating spoon. Over time, your taste buds have become desensitised from the shifting fluid to your head when you are in space. As a result, you can only eat spicy foods now - it&#39;s the only taste you can feel.
 
 This Katsu curry is particularly spicy. You sneezed and accidetally lost grip of the spoon. It floats towards the window. You leaned forward to catch it, however you heard the strangest loud popping sound coming from outside, like a car backfiring.
 
-[[Investigate|Crash Landing]]</tw-passagedata><tw-passagedata pid="22" name="Play Games" tags="" position="542.3333333333334,1270" size="100,100">Time for some nostalgic Space Invaders! As you&#39;re blasting through the levles, you heard the strangest loud popping sound coming from the outside, like a car backfiring. 
+[[Investigate|Crash Landing]]</tw-passagedata><tw-passagedata pid="22" name="Play Games" tags="" position="542,1270" size="100,100">Time for some nostalgic Space Invaders! As you&#39;re blasting through the levles, you heard the strangest loud popping sound coming from the outside, like a car backfiring. 
 
-[[Investigate|Crash Landing]]</tw-passagedata><tw-passagedata pid="23" name="Oculi Self Intro" tags="" position="206,1924.6666666666667" size="100,100">(set: $oculiIntro to true) Oculi winks at you with an electric amber eye. &quot;Yes! Let me introduce myself. I am Oculi Albright Cardassian, the youngest Cardassian. You probably wouldn&#39;t have seen me on the reality show, as I&#39;ve been away from my family for a while, travelling and collecting interesting artifacts here. I&#39;m a master intergalactic linguist and an expert in Alien Physiology, specialising in carbon-based life forms. I also have a photographic memory. &quot;
+[[Investigate|Crash Landing]]</tw-passagedata><tw-passagedata pid="23" name="Oculi Self Intro" tags="" position="206,1924" size="100,100">(set: $oculiIntro to true) Oculi winks at you with an electric amber eye. &quot;Yes! Let me introduce myself. I am Oculi Albright Cardassian, the youngest Cardassian. You probably wouldn&#39;t have seen me on the reality show, as I&#39;ve been away from my family for a while, travelling and collecting interesting artifacts here. I&#39;m a master intergalactic linguist and an expert in Alien Physiology, specialising in carbon-based life forms. I also have a photographic memory. &quot;
 
 (if: $locationHint is false)[[[Where am I?|Location Hint]]]
 (if: $oculiIntro is false)[[[You&#39;re a Cardassian?|Oculi Self Intro]]]
 [[Would you be kind enough to let me stay the night?|Ask to Stay]]
-[[What kind of interesting artifacts do you collect?|What do you collect]]</tw-passagedata><tw-passagedata pid="24" name="Ask to Stay" tags="" position="445.6666666666667,2084.333333333333" size="100,100">&quot;I have nowhere to rest tonight..would you be kind enough to let me spend a night at your place?&quot; You asked. 
+[[What kind of interesting artifacts do you collect?|What do you collect]]</tw-passagedata><tw-passagedata pid="24" name="Ask to Stay" tags="" position="445,2084" size="100,100">&quot;I have nowhere to rest tonight..would you be kind enough to let me spend a night at your place?&quot; You asked. 
 
 Oculi agreed graciously. &quot;Very well, I will let you stay here. I was not expecting any guests so I can offer you a poor welcome only, but please do come in now. &quot; 
 
-[[Enter Oculi&#39;s Home|Enter Oculi Home]]</tw-passagedata><tw-passagedata pid="25" name="Offer Music" tags="" position="532,2387.3333333333335" size="100,100">Oculi excitedly accepted your offer. Their face is beaming with happiness. &quot;What a lovely gift! Thank you so much. You must be hungry and tired after your crash landing, so I will go and cook some food for you first. I have some delicious Gagh serpent worms, Racht and Klingon Blood Wine, What food would you like?&quot;
+[[Enter Oculi&#39;s Home|Enter Oculi Home]]</tw-passagedata><tw-passagedata pid="25" name="Offer Music" tags="" position="532,2387" size="100,100">Oculi excitedly accepted your offer. Their face is beaming with happiness. &quot;What a lovely gift! Thank you so much. You must be hungry and tired after your crash landing, so I will go and cook some food for you first. I have some delicious Gagh serpent worms, Racht and Klingon Blood Wine, What food would you like?&quot;
 
 [[Gagh serpent worms|Gagh serpent worms]]
 [[Racht|Racht]]
@@ -311,7 +313,7 @@ Unless you can get your hands on a lot of money, you will be homeless with nowhe
 
 Participating in &quot;Keeping Up with the Martians&quot; seems to be the only way out.
 
-[[Get back to Gamma to Participate|Confirm to Participate]]</tw-passagedata><tw-passagedata pid="32" name="Ask For Help" tags="" position="470,1789.6666666666667" size="100,100">You knock on the door. 
+[[Get back to Gamma to Participate|Confirm to Participate]]</tw-passagedata><tw-passagedata pid="32" name="Ask For Help" tags="" position="470,1789" size="100,100">You knock on the door. 
 
 A few seconds later, an alien opened the door. Dressed in an immaculate white Mars suit, They look sophisticated and charming in an androgynous way, with light-grey skin, slicked back jet black hair and vivid amber eyes. 
 
@@ -327,88 +329,88 @@ The alien smiled flirtatiously. &quot;Greetings, &lt;span name = &quot;name&quot
 [[Mars Bars|Mars Bar]]
 [[The Hitchhiker&#39;s Guide to the Galaxy|Hitchhiker]] 
 [[David Bowie Life on Mars Music Box|Life on Mars]]
-[[Budweiser Mars Beer|Alcohol]]</tw-passagedata><tw-passagedata pid="34" name="Gagh serpent worms" tags="" position="1124.6666666666667,2333.9999999999995" size="100,100">You&#39;re presented with a big bowl of Gagh serpent worms.
+[[Budweiser Mars Beer|Alcohol]]</tw-passagedata><tw-passagedata pid="34" name="Gagh serpent worms" tags="" position="1124,2333" size="100,100">You&#39;re presented with a big bowl of Gagh serpent worms.
 
 &quot;Gagh is one of the tastiest thing on this planet. I went to great lengths to make sure they are served live and squishy for you! I haven&#39;t had it myself for quite a while. This is very fresh.&quot;
 
 [[Act polite and eat it|Ending Death Food Poisoning]]
-[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="35" name="Flirt Back First Meet" tags="" position="796.6666666666667,1902.6666666666667" size="100,100">(set: $locationHint to true)&quot;Haha, you&#39;re so sweet. I like you already.&quot;
+[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="35" name="Flirt Back First Meet" tags="" position="796,1902" size="100,100">(set: $locationHint to true)&quot;Haha, you&#39;re so sweet. I like you already.&quot;
 
 (if: $locationHint is false)[[[Where am I?|Location Hint]]]
 (if: $oculiIntro is false)[[[You&#39;re a Cardassian?|Oculi Self Intro]]]
-[[Would you be kind enough to let me stay the night?|Ask to Stay]]</tw-passagedata><tw-passagedata pid="36" name="What do you collect" tags="" position="246,2074.6666666666665" size="100,100">&quot;I collect specimens of the most beautiful features from alien species. Whenever I visit a place and discover something new, I collect a special specimen from there. I have an extremely large bucket list. This collection represents many wonderful memories of different people I have met. Over time, it has gotten completely out of control.&quot;.
+[[Would you be kind enough to let me stay the night?|Ask to Stay]]</tw-passagedata><tw-passagedata pid="36" name="What do you collect" tags="" position="246,2074" size="100,100">&quot;I collect specimens of the most beautiful features from alien species. Whenever I visit a place and discover something new, I collect a special specimen from there. I have an extremely large bucket list. This collection represents many wonderful memories of different people I have met. Over time, it has gotten completely out of control.&quot;.
 
 (if: $locationHint is false)[[[Where am I?|Location Hint]]]
 [[Would you be kind enough to let me stay the night?|Ask to Stay]]
-[[Interesting, could I see your collection?|Could I see your collection]]</tw-passagedata><tw-passagedata pid="37" name="Look Out of the Window" tags="" position="1039,1293.3333333333333" size="100,100">You let your mind wander in fascination and awe, as you look at your home planet Earth spin beneath you with its multiple shades and textures. Sunsets and sunrises are very spectacular, occurring every 45 minutes above Earth&#39;s atmosphere.
+[[Interesting, could I see your collection?|Could I see your collection]]</tw-passagedata><tw-passagedata pid="37" name="Look Out of the Window" tags="" position="1039,1293" size="100,100">You let your mind wander in fascination and awe, as you look at your home planet Earth spin beneath you with its multiple shades and textures. Sunsets and sunrises are very spectacular, occurring every 45 minutes above Earth&#39;s atmosphere.
 
 However, a strangest loud popping sound wakes you up from your daydream. It&#39;s coming from the outside, like a car backfiring. 
 
-[[Investigate|Crash Landing]]</tw-passagedata><tw-passagedata pid="38" name="Could I see your collection" tags="" position="129.99999999999997,2216.6666666666665" size="100,100">&quot;If you&#39;re lucky - yes! You must be very tired and hungry after the crash though, I&#39;d be happy to make you food and give you a place to rest, you know. &quot;
+[[Investigate|Crash Landing]]</tw-passagedata><tw-passagedata pid="38" name="Could I see your collection" tags="" position="129,2216" size="100,100">&quot;If you&#39;re lucky - yes! You must be very tired and hungry after the crash though, I&#39;d be happy to make you food and give you a place to rest, you know. &quot;
 
 [[Accept|Enter Oculi Home]]
-[[Reject|Reject Oculi Offer]]</tw-passagedata><tw-passagedata pid="39" name="Reject Oculi Offer" tags="" position="312.3333333333333,2313.3333333333335" size="100,100">Oculi frowned. &quot;Are you sure? It&#39;s cold and dangerous out there, plus your oxygen supply won&#39;t last forever.&quot;
+[[Reject|Reject Oculi Offer]]</tw-passagedata><tw-passagedata pid="39" name="Reject Oculi Offer" tags="" position="312,2313" size="100,100">Oculi frowned. &quot;Are you sure? It&#39;s cold and dangerous out there, plus your oxygen supply won&#39;t last forever.&quot;
 
 [[I don&#39;t want to bother you|Leave Oculi]]
-[[OK, I&#39;ll stay|Stay with Oculi]]</tw-passagedata><tw-passagedata pid="40" name="Leave Oculi" tags="" position="130.66666666666666,2509.9999999999995" size="100,100">&quot;I don&#39;t want to bother you&quot;, you told Oculi politely.
+[[OK, I&#39;ll stay|Stay with Oculi]]</tw-passagedata><tw-passagedata pid="40" name="Leave Oculi" tags="" position="130,2509" size="100,100">&quot;I don&#39;t want to bother you&quot;, you told Oculi politely.
 &quot;You won&#39;t be a bother. However, it is your decision, I will always be here, so you can come back anytime you have changed your mind.&quot;
 
 [[I have changed my mind. I&#39;ll stay.|Stay with Oculi]]
-[[No, I&#39;d prefer to go.|Stranded loop]]</tw-passagedata><tw-passagedata pid="41" name="Stay with Oculi" tags="" position="349.00000000000006,2480.0000000000005" size="100,100">Oculi is happy that you have decided to stay.</tw-passagedata><tw-passagedata pid="42" name="Stranded loop" tags="" position="110,2368.6666666666665" size="100,100">Oculi is very disappointed but accepts your decision. You left Oculi&#39;s home and wandered for a while. For some strange reason, the maze-like structure keeps leading you back to Oculi&#39;s place. Furthermore, your oxygen supply is running low so you will really need some help..
+[[No, I&#39;d prefer to go.|Stranded loop]]</tw-passagedata><tw-passagedata pid="41" name="Stay with Oculi" tags="" position="349,2480" size="100,100">Oculi is happy that you have decided to stay.</tw-passagedata><tw-passagedata pid="42" name="Stranded loop" tags="" position="110,2368" size="100,100">Oculi is very disappointed but accepts your decision. You left Oculi&#39;s home and wandered for a while. For some strange reason, the maze-like structure keeps leading you back to Oculi&#39;s place. Furthermore, your oxygen supply is running low so you will really need some help..
 
-[[Go back to Oculi&#39;s place and ask for help|Ask to Stay]]</tw-passagedata><tw-passagedata pid="43" name="Enter Oculi Home" tags="" position="682.3333333333333,2079.666666666666" size="100,100">Oculi&#39;s home is way too big for just one person. The panels on the biodome are made of glass, and the walls are raised from below ground to block the dust from outside. In front of the giant windows, there&#39;s a huge dining table that ten people could comfortably eat around. Everything is white - ceiling, floors and walls. Aside from the various oxygen-pumping plants, the rest of the dining room is cold, clean and clinical.
+[[Go back to Oculi&#39;s place and ask for help|Ask to Stay]]</tw-passagedata><tw-passagedata pid="43" name="Enter Oculi Home" tags="" position="682,2079" size="100,100">Oculi&#39;s home is way too big for just one person. The panels on the biodome are made of glass, and the walls are raised from below ground to block the dust from outside. In front of the giant windows, there&#39;s a huge dining table that ten people could comfortably eat around. Everything is white - ceiling, floors and walls. Aside from the various oxygen-pumping plants, the rest of the dining room is cold, clean and clinical.
 
 &quot;You have such a lovely home. Thank you so much for letting me stay here! I have a small gift as a token to express my thanks.&quot;
 (if: $inventory is &quot;music&quot;)[[[Offer David Bowie Life on Mars Music Box|Offer Music]]]
 (if: $inventory is &quot;hitchhiker&quot;)[[[Offer The Hitchhiker&#39;s Guide to the Galaxy|Offer Hitchhiker]]]
 (if: $inventory is &quot;alcohol&quot;)[[[Offer Budweiser Mars Beer|Offer Beer]]]
-(if: $inventory is &quot;chocolate&quot;)[[[Offer Mars Bar|Offer Mars Bar]]]</tw-passagedata><tw-passagedata pid="44" name="Reject alien food" tags="" position="872,2537.9999999999995" size="100,100">&quot;Ahh, please pardon me,&quot; Oculi smiled apologetically. &quot;I&#39;ll go and find you some human food. You should stay and take care of the hosue while I am gone.&quot;
+(if: $inventory is &quot;chocolate&quot;)[[[Offer Mars Bar|Offer Mars Bar]]]</tw-passagedata><tw-passagedata pid="44" name="Reject alien food" tags="" position="872,2537" size="100,100">&quot;Ahh, please pardon me,&quot; Oculi smiled apologetically. &quot;I&#39;ll go and find you some human food. You should stay and take care of the hosue while I am gone.&quot;
 
 [[Thanks for the offer|Thanks for the offer]]
-[[Let me come with you|Ask to go with Oculi]]</tw-passagedata><tw-passagedata pid="45" name="Racht" tags="" position="703.9999999999999,2412.9999999999995" size="100,100">You&#39;re presented with a big bowl of lively alien worms.
+[[Let me come with you|Ask to go with Oculi]]</tw-passagedata><tw-passagedata pid="45" name="Racht" tags="" position="703,2412" size="100,100">You&#39;re presented with a big bowl of lively alien worms.
 
 &quot;Racht is one of the tastiest thing on this planet. I went to great lengths to make sure they are served live and squishy for you! there&#39;s nothing worse than half-dead Racht.&quot;
 
 [[Act polite and eat it|Ending Death Food Poisoning]]
-[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="46" name="Klingon Blood Wine" tags="" position="1074,2177.9999999999995" size="100,100">You&#39;re presented with a giant jug of Klingon Blood Wine.
+[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="46" name="Klingon Blood Wine" tags="" position="1074,2177" size="100,100">You&#39;re presented with a giant jug of Klingon Blood Wine.
 
 &quot;Although this looks a little gross, Klingon Blood Wine is one of the most intoxicating things!&quot;
 
 [[Act polite and drink it|Ending Death Food Poisoning]]
-[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="47" name="Ending Death Food Poisoning" tags="" position="1008,2453.9999999999995" size="100,100">You wanted to act polite so you accepted Oculi&#39;s offer. After only one bite, it triggered an allergic reaction and you died horribly of food poisoning.
+[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="47" name="Ending Death Food Poisoning" tags="" position="1008,2453" size="100,100">You wanted to act polite so you accepted Oculi&#39;s offer. After only one bite, it triggered an allergic reaction and you died horribly of food poisoning.
 
-(link: &quot;Restart&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="48" name="Offer Hitchhiker" tags="" position="490.6666666666665,2239.666666666666" size="100,100">Oculi excitedly accepted your offer. Their face is beaming with happiness. &quot;What a lovely gift! Thank you so much. This is one of my favourite books. I know you humans like alcohol because The Hitchhiker&#39;s guide notes its intoxicating effect on certain carbon-based life forms, and you know what, I happen to have some ingredients for making Pan Galactic Gargle Blaster in my brewery! I&#39;d fly there to get you some, however you must be hungry and tired after your crash landing, so I will go and cook some food for you first. I have some delicious Gagh serpent worms, Racht and Klingon Blood Wine, What food would you like?&quot;
-
-[[Gagh serpent worms|Gagh serpent worms]]
-[[Racht|Racht]]
-[[Klingon Blood Wine|Klingon Blood Wine]]
-[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="49" name="Offer Beer" tags="" position="682.3333333333334,2246.333333333333" size="100,100">Oculi excitedly accepted your offer. Their face is beaming with happiness. &quot;What a lovely gift! Thank you so much. I know you humans like alcohol because of its intoxicating effect on certain carbon-based life forms, and you know what, I happen to have some ingredients for making Pan Galactic Gargle Blaster in my brewery! I&#39;d fly there to get you some, however you must be hungry and tired after your crash landing, so I will go and cook some food for you first. I have some delicious Gagh serpent worms, Racht and Klingon Blood Wine, What food would you like?&quot;
+(link: &quot;Restart&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="48" name="Offer Hitchhiker" tags="" position="490,2239" size="100,100">Oculi excitedly accepted your offer. Their face is beaming with happiness. &quot;What a lovely gift! Thank you so much. This is one of my favourite books. I know you humans like alcohol because The Hitchhiker&#39;s guide notes its intoxicating effect on certain carbon-based life forms, and you know what, I happen to have some ingredients for making Pan Galactic Gargle Blaster in my brewery! I&#39;d fly there to get you some, however you must be hungry and tired after your crash landing, so I will go and cook some food for you first. I have some delicious Gagh serpent worms, Racht and Klingon Blood Wine, What food would you like?&quot;
 
 [[Gagh serpent worms|Gagh serpent worms]]
 [[Racht|Racht]]
 [[Klingon Blood Wine|Klingon Blood Wine]]
-[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="50" name="Offer Mars Bar" tags="" position="859,2092.9999999999995" size="100,100">Oculi excitedly accepted your offer. Their face is beaming with happiness. &quot;What a lovely gift! Thank you so much. You must be hungry and tired after your crash landing, so I will go and cook some food for you first. I have some delicious Gagh serpent worms, Racht and Klingon Blood Wine, What food would you like?&quot;
+[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="49" name="Offer Beer" tags="" position="682,2246" size="100,100">Oculi excitedly accepted your offer. Their face is beaming with happiness. &quot;What a lovely gift! Thank you so much. I know you humans like alcohol because of its intoxicating effect on certain carbon-based life forms, and you know what, I happen to have some ingredients for making Pan Galactic Gargle Blaster in my brewery! I&#39;d fly there to get you some, however you must be hungry and tired after your crash landing, so I will go and cook some food for you first. I have some delicious Gagh serpent worms, Racht and Klingon Blood Wine, What food would you like?&quot;
 
 [[Gagh serpent worms|Gagh serpent worms]]
 [[Racht|Racht]]
 [[Klingon Blood Wine|Klingon Blood Wine]]
-[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="51" name="Thanks for the offer" tags="" position="702,2687.9999999999995" size="100,100">&quot;My pleasure.&quot; Oculi prepares to go out, &quot;you should stay quietly here, for you are my guest. Whatever happens, don&#39;t go near or look into the underground room. &quot;
+[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="50" name="Offer Mars Bar" tags="" position="859,2092" size="100,100">Oculi excitedly accepted your offer. Their face is beaming with happiness. &quot;What a lovely gift! Thank you so much. You must be hungry and tired after your crash landing, so I will go and cook some food for you first. I have some delicious Gagh serpent worms, Racht and Klingon Blood Wine, What food would you like?&quot;
+
+[[Gagh serpent worms|Gagh serpent worms]]
+[[Racht|Racht]]
+[[Klingon Blood Wine|Klingon Blood Wine]]
+[[My body can&#39;t digest Alien foods, I&#39;ll die of food poisoning..|Reject alien food]]</tw-passagedata><tw-passagedata pid="51" name="Thanks for the offer" tags="" position="702,2687" size="100,100">&quot;My pleasure.&quot; Oculi prepares to go out, &quot;you should stay quietly here, for you are my guest. Whatever happens, don&#39;t go near or look into the underground room. &quot;
 
 [[Sure.|Agree not to look]]
-[[Why is that?|Ask why not to look]]</tw-passagedata><tw-passagedata pid="52" name="Ask to go with Oculi" tags="" position="943.6666666666666,2687.9999999999995" size="100,100">&quot;No, you should stay quietly here, for you are my guest.&quot; Oculi shook their head and prepares to go out, &quot;Whatever happens, don&#39;t go near or look into the underground room. &quot;
+[[Why is that?|Ask why not to look]]</tw-passagedata><tw-passagedata pid="52" name="Ask to go with Oculi" tags="" position="943,2687" size="100,100">&quot;No, you should stay quietly here, for you are my guest.&quot; Oculi shook their head and prepares to go out, &quot;Whatever happens, don&#39;t go near or look into the underground room. &quot;
 
 [[Sure.|Agree not to look]]
-[[Why is that?|Ask why not to look]]</tw-passagedata><tw-passagedata pid="53" name="Agree not to look" tags="" position="627,2837.9999999999995" size="100,100">&quot;If you tell me not to go near the underground room, of course I won&#39;t.&quot; You are rather bewilderd but agreed to Oculi&#39;s request. 
+[[Why is that?|Ask why not to look]]</tw-passagedata><tw-passagedata pid="53" name="Agree not to look" tags="" position="627,2837" size="100,100">&quot;If you tell me not to go near the underground room, of course I won&#39;t.&quot; You are rather bewilderd but agreed to Oculi&#39;s request. 
 
 &quot;Good.&quot; Oculi nods and left, now you are left alone. You start to feel weird and Oculi&#39;s words aroused your curiosity. What hidden things could be in that room that they don&#39;t want you to see?
 
 [[Don&#39;t go to the underground room|bad ending killed]]
-[[Go to the underground room|underground room]]</tw-passagedata><tw-passagedata pid="54" name="Ask why not to look" tags="" position="873.6666666666666,2821.333333333333" size="100,100">&quot;It&#39;s a secret surprise! I will show you the room when I&#39;m back but it&#39;s not ready yet. Have some patience.&quot; Oculi winks at you with one vivid amber eye and left. 
+[[Go to the underground room|underground room]]</tw-passagedata><tw-passagedata pid="54" name="Ask why not to look" tags="" position="873,2821" size="100,100">&quot;It&#39;s a secret surprise! I will show you the room when I&#39;m back but it&#39;s not ready yet. Have some patience.&quot; Oculi winks at you with one vivid amber eye and left. 
 
 You wonder what that secret surprise might be, now you are left alone. You start to feel weird and Oculi&#39;s words aroused your curiosity. What hidden things could be in that room that they don&#39;t want you to see?
 
 [[Don&#39;t go to the underground room|bad ending killed]]
-[[Go to the underground room|underground room]]</tw-passagedata><tw-passagedata pid="55" name="bad ending killed" tags="" position="552,2984.666666666666" size="100,100">After a while, Oculi came back with a feast. All of your favourite foods are there: Ramen, pizzas, burgers, cakes and wine.
+[[Go to the underground room|underground room]]</tw-passagedata><tw-passagedata pid="55" name="bad ending killed" tags="" position="552,2984" size="100,100">After a while, Oculi came back with a feast. All of your favourite foods are there: Ramen, pizzas, burgers, cakes and wine.
 
 Oculi looks into your eyes and starts to flirt with you. &quot;You really do look lovely tonight. Your $eyecolour is the most beautiful colour I have seen and your tousled $haircolour hair is like a bed of soft entangled heather caressing the rolling hills of your head. Now drink this wine.&quot;
 
@@ -416,17 +418,17 @@ Being extremely aware of Oculi&#39;s intense eyes, you blush furiously and gulp 
 
 &quot;Hey $name, thank you for such a lovely evening. I want to show you something really special - my most prized collection. Follow me.&quot;
 
-[[Follow Oculi into the Underground Room|Die]]</tw-passagedata><tw-passagedata pid="56" name="underground room" tags="" position="702,2984.666666666666" size="100,100">You couldn&#39;t resiste your curiosity. You get up and move towards the forbidden underground room. Oculi will not know that you have looked unless you told them.
+[[Follow Oculi into the Underground Room|Die]]</tw-passagedata><tw-passagedata pid="56" name="underground room" tags="" position="702,2984" size="100,100">You couldn&#39;t resiste your curiosity. You get up and move towards the forbidden underground room. Oculi will not know that you have looked unless you told them.
 
 There is a 6-digit password to the underground room.
 
 [[(Requires Hacking)Hack into it|Hack]]
 [[Guess the password|Guess the password]]
-[[(Strength)Smash the door open|Smash]]</tw-passagedata><tw-passagedata pid="57" name="Guess the password" tags="" position="878.6666666666667,3154.666666666666" size="100,100">(set: $password to (prompt: &quot;What is the password? Hint: find a number of six digits of such a nature that if you transfer the two left-hand digits to the opposite end, the new number thus formed is exactly double the original number.&quot;,&quot;&quot;) )
+[[(Strength)Smash the door open|Smash]]</tw-passagedata><tw-passagedata pid="57" name="Guess the password" tags="" position="878,3154" size="100,100">(set: $password to (prompt: &quot;What is the password? Hint: find a number of six digits of such a nature that if you transfer the two left-hand digits to the opposite end, the new number thus formed is exactly double the original number.&quot;,&quot;&quot;) )
 
-(if: $password is &quot;285714&quot;)[[[You are correct.The door is unlocked.|Correct Password]]](else:)[You are wrong. [[Try again-&gt;Guess the password]].]</tw-passagedata><tw-passagedata pid="58" name="Smash" tags="" position="705.3333333333334,3137.9999999999995" size="100,100">(Success)You smashed the door open with all of your force.
+(if: $password is &quot;285714&quot;)[[[You are correct.The door is unlocked.|Correct Password]]](else:)[You are wrong. [[Try again-&gt;Guess the password]].]</tw-passagedata><tw-passagedata pid="58" name="Smash" tags="" position="705,3137" size="100,100">(Success)You smashed the door open with all of your force.
 
-[[Proceed to the Underground Room|Correct Password]]</tw-passagedata><tw-passagedata pid="59" name="Correct Password" tags="" position="773.6666666666667,3311.333333333333" size="100,100">The door opens.
+[[Proceed to the Underground Room|Correct Password]]</tw-passagedata><tw-passagedata pid="59" name="Correct Password" tags="" position="773,3311" size="100,100">The door opens.
 
 What you saw froze the blood in your veins.
 
@@ -436,13 +438,13 @@ The sickening smell makes you faint.
 
 &quot;So this is what Oculi has been collecting! When they come back, they will surely show their true colour and kill me to add my eyes to their collection...I need to get out of here!&quot;
 
-[[Find a way to escape|Back to Spaceship]]</tw-passagedata><tw-passagedata pid="60" name="Back to Spaceship" tags="" position="807.0000000000002,3477.999999999999" size="100,100">Snatching up as much equipment as you could get to repair your spaceship, you rushed out of Oculi&#39;s place as fast as your legs could carry you. You ran into the night, trying to get back to your spaceship..
+[[Find a way to escape|Back to Spaceship]]</tw-passagedata><tw-passagedata pid="60" name="Back to Spaceship" tags="" position="807,3477" size="100,100">Snatching up as much equipment as you could get to repair your spaceship, you rushed out of Oculi&#39;s place as fast as your legs could carry you. You ran into the night, trying to get back to your spaceship..
 
 &lt;h3&gt;End of Chapter 1: Keeping Up with the Cardassians&lt;h3&gt;
 
 (link: &quot;Play Again&quot;)[(reload:)]
 
-</tw-passagedata><tw-passagedata pid="61" name="Die" tags="" position="409,3141.3333333333326" size="100,100">You wonder what is in the underground room. The room is very dark but there is a strong pungent smell. 
+</tw-passagedata><tw-passagedata pid="61" name="Die" tags="" position="409,3141" size="100,100">You wonder what is in the underground room. The room is very dark but there is a strong pungent smell. 
 
 Oculi turns on the light. 
 
