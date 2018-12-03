@@ -1,0 +1,107 @@
+ @import 'https://fonts.googleapis.com/css?family=Redressed|Coda';
+ @import 'https://fonts.googleapis.com/css?family=Titillium+Web';
+ @import 'https://fonts.googleapis.com/css?family=Audiowide';
+ @import 'https://fonts.googleapis.com/css?family=Patua+One';
+ @import 'https://fonts.googleapis.com/css?family=Poiret+One';
+
+body {
+	background-image: url("https://3bonlp1aiidtbao4s10xacvn-wpengine.netdna-ssl.com/wp-content/uploads/2018/02/Mars-featured-image-1068x818.jpg");
+	background-size: 100%;
+}
+
+tw-story {
+
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 10%, rgba(0,0,0,0.45) 87%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 10%,rgba(0,0,0,0.45) 87%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 10%,rgba(0,0,0,0.45) 87%,rgba(0,0,0,0) 100%);
+  	display: flex;
+
+}
+
+
+tw-passage {
+	color: rgba(255,255,255,0.75);
+	text-shadow: 0px 0px 3px rgba(255,255,255,0.8);
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h3{
+	font-family: 'Poiret One', cursive;
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+    position: relative;
+}
+
+span.name{
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+    position: relative;
+}
+
+span.stats{
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+    position: relative;
+}
+
+span.required{
+	color: rgba(255,0,0, 0.9);
+	text-shadow: 0px 0px 15px red;
+    position: relative;
+}
+
+h1{
+	color: rgba(255,0,0, 0.9);
+	text-shadow: 0px 0px 15px red;
+}
+
+h2{
+	font-family: 'Poiret One', cursive;
+  	font-size: 42px;
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+}
+
+name{
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+    position: relative;
+}
+
+tw-link {
+	font-family: 'Poiret One', cursive;
+	font-size: 36px;
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+tw-passage.deleted {
+	font-family: 'Poiret One', cursive;
+	font-size: 36px;
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;
+	padding-left: 5px;
+	padding-right: 5px;
+  	text-decoration: line-through;
+}
+
+.enchantment-link:hover, tw-link:hover {
+	color: rgba(255,255,127, 0.9);
+	text-shadow: 0px 0px 15px yellow;
+	padding-left: 5px;
+	padding-right: 5px;  
+}
+
+enchantment-link.visited, tw-link.visited {
+	color: rgba(255,128,72, 0.9);
+	text-shadow: 0px 0px 15px orange;	
+}
+
+enchantment-link.visited:hover, tw-link.visited:hover {
+	color: rgba(255,255,127, 0.9);
+	text-shadow: 0px 0px 15px yellow;
+	padding-left: 5px;
+	padding-right: 5px;  
+}
