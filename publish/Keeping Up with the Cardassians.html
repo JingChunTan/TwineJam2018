@@ -131,6 +131,7 @@ enchantment-link.visited:hover, tw-link.visited:hover {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">function validateForm() {
     var x = document.forms["myForm"]["fname"].value;
     if (x == "") {
@@ -138,6 +139,7 @@ enchantment-link.visited:hover, tw-link.visited:hover {
         return false;
     }
 }
+
 
 
 
@@ -375,7 +377,7 @@ The alien smiled flirtatiously. &quot;Greetings, &lt;span name = &quot;name&quot
 
 However, a strangest loud popping sound wakes you up from your daydream. It&#39;s coming from the outside, like a car backfiring. 
 
-[[Investigate|Crash Landing]]</tw-passagedata><tw-passagedata pid="38" name="Could I see your collection" tags="" position="129,2216" size="100,100">&quot;If you&#39;re lucky - yes! You must be very tired and hungry after the crash though, I&#39;d be happy to make you food and give you a place to rest, you know. &quot;
+[[Investigate|Crash Landing]]</tw-passagedata><tw-passagedata pid="38" name="Could I see your collection" tags="" position="129,2219.3333333333335" size="100,100">&quot;If you&#39;re lucky - yes! You must be very tired and hungry after the crash though, I&#39;d be happy to make you food and give you a place to rest, you know. &quot;
 
 [[Accept|Enter Oculi Home]]
 [[Reject|Reject Oculi Offer]]</tw-passagedata><tw-passagedata pid="39" name="Reject Oculi Offer" tags="" position="312,2313" size="100,100">Oculi frowned. &quot;Are you sure? It&#39;s cold and dangerous out there, plus your oxygen supply won&#39;t last forever.&quot;
@@ -385,7 +387,9 @@ However, a strangest loud popping sound wakes you up from your daydream. It&#39;
 &quot;You won&#39;t be a bother. However, it is your decision, I will always be here, so you can come back anytime you have changed your mind.&quot;
 
 [[I have changed my mind. I&#39;ll stay.|Stay with Oculi]]
-[[No, I&#39;d prefer to go.|Stranded loop]]</tw-passagedata><tw-passagedata pid="41" name="Stay with Oculi" tags="" position="349,2480" size="100,100">Oculi is happy that you have decided to stay.</tw-passagedata><tw-passagedata pid="42" name="Stranded loop" tags="" position="110,2368" size="100,100">Oculi is very disappointed but accepts your decision. You left Oculi&#39;s home and wandered for a while. For some strange reason, the maze-like structure keeps leading you back to Oculi&#39;s place. Furthermore, your oxygen supply is running low so you will really need some help..
+[[No, I&#39;d prefer to go.|Stranded loop]]</tw-passagedata><tw-passagedata pid="41" name="Stay with Oculi" tags="" position="389,2490" size="100,100">Oculi is happy that you have decided to stay. &quot;Good! I was not expecting any guests so I can offer you a poor welcome only, but please do come in now. &quot; 
+
+[[Enter Oculi&#39;s Home|Enter Oculi Home]]</tw-passagedata><tw-passagedata pid="42" name="Stranded loop" tags="" position="110,2368" size="100,100">Oculi is very disappointed but accepts your decision. You left Oculi&#39;s home and wandered for a while. For some strange reason, the maze-like structure keeps leading you back to Oculi&#39;s place. Furthermore, your oxygen supply is running low so you will really need some help..
 
 [[Go back to Oculi&#39;s place and ask for help|Ask to Stay]]</tw-passagedata><tw-passagedata pid="43" name="Enter Oculi Home" tags="" position="682,2079" size="100,100">Oculi&#39;s home is way too big for just one person. The panels on the biodome are made of glass, and the walls are raised from below ground to block the dust from outside. In front of the giant windows, there&#39;s a huge dining table that ten people could comfortably eat around. Everything is white - ceiling, floors and walls. Aside from the various oxygen-pumping plants, the rest of the dining room is cold, clean and clinical.
 
@@ -439,7 +443,7 @@ However, a strangest loud popping sound wakes you up from your daydream. It&#39;
 You wonder what that secret surprise might be, now you are left alone. You start to feel weird and Oculi&#39;s words aroused your curiosity. What hidden things could be in that room that they don&#39;t want you to see?
 
 [[Don&#39;t go to the underground room|bad ending killed]]
-[[Go to the underground room|underground room]]</tw-passagedata><tw-passagedata pid="55" name="bad ending killed" tags="" position="525.3333333333334,2964" size="100,100">After a while, Oculi came back with a feast. All of your favourite foods are there: Ramen, pizzas, burgers, cakes and wine.
+[[Go to the underground room|underground room]]</tw-passagedata><tw-passagedata pid="55" name="bad ending killed" tags="" position="525,2964" size="100,100">After a while, Oculi came back with a feast. All of your favourite foods are there: Ramen, pizzas, burgers, cakes and wine.
 
 Oculi looks into your eyes and starts to flirt with you. &quot;You really do look lovely tonight. You have the most beautiful $eyecolour eyes I have ever seen and your tousled $haircolour hair is like a bed of soft entangled heather caressing the rolling hills of your head. Now drink this wine.&quot;
 
@@ -454,20 +458,20 @@ There is a 6-digit password to the underground room.
 [[(Requires Hacking)Hack into it|Hack]]
 [[Guess the password|Guess the password]]
 [[(Requires Strength)Smash the door open|Smash]]
-[[Give up and Return|Give up and return]]</tw-passagedata><tw-passagedata pid="57" name="Guess the password" tags="" position="874.6666666666666,3154" size="100,100">(set: $password to (prompt: &quot;What is the password? Hint: find a number of six digits of such a nature that if you transfer the two left-hand digits to the opposite end, the new number thus formed is exactly double the original number.&quot;,&quot;&quot;) )
+[[Give up and Return|Give up and return]]</tw-passagedata><tw-passagedata pid="57" name="Guess the password" tags="" position="874,3154" size="100,100">(set: $password to (prompt: &quot;What is the password? Hint: find a number of six digits of such a nature that if you transfer the two left-hand digits to the opposite end, the new number thus formed is exactly double the original number.&quot;,&quot;&quot;) )
 
 (if: $password is &quot;285714&quot;)[[[You are correct.The door is unlocked.|Correct Password]]](else:)[You are wrong. 
 [[Try again-&gt;Guess the password]]
 [[(Requires Hacking)Hack into it|Hack]] 
 [[(Requires Strength)Smash the door open|Smash]]
-[[Give up and Return|Give up and return]]]</tw-passagedata><tw-passagedata pid="58" name="Smash" tags="" position="721.6666666666666,3099.2222900390625" size="100,100">(if: $strength &gt; 2 or($talent is not &quot;Hacking&quot; and $strength &lt;=2))
+[[Give up and Return|Give up and return]]]</tw-passagedata><tw-passagedata pid="58" name="Smash" tags="" position="721,3099" size="100,100">(if: $strength &gt; 2 or($talent is not &quot;Hacking&quot; and $strength &lt;=2))
 [(Success) You smashed the door open with all of your force.
 [[Proceed to the Underground Room|Correct Password]]]
 
 (else:)[You smashed the door with all of your force but the door is too strong.
 [[Guess the password|Guess the password]]
 [[(Requires Hacking)Hack into it|Hack]]
-[[Give up and Return|Give up and return]]]</tw-passagedata><tw-passagedata pid="59" name="Correct Password" tags="" position="773,3307.6666666666665" size="100,100">The door opens.
+[[Give up and Return|Give up and return]]]</tw-passagedata><tw-passagedata pid="59" name="Correct Password" tags="" position="773,3307" size="100,100">The door opens.
 
 What you saw froze the blood in your veins.
 
@@ -483,7 +487,7 @@ The sickening smell makes you faint.
 
 (link: &quot;Play Again&quot;)[(reload:)]
 
-</tw-passagedata><tw-passagedata pid="61" name="Die" tags="" position="399,3084.3333333333335" size="100,100">You wonder what is in the underground room. The room is very dark but there is a strong pungent smell. 
+</tw-passagedata><tw-passagedata pid="61" name="Die" tags="" position="399,3084" size="100,100">You wonder what is in the underground room. The room is very dark but there is a strong pungent smell. 
 
 Oculi turns on the light. 
 
@@ -498,7 +502,7 @@ The sickening smell makes you faint.
 Your vision slowly fades to black..
 
 &lt;h3&gt;You Died: Bad Ending&lt;h3&gt;
-(link: &quot;Play Again&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="62" name="Give up and return" tags="" position="1005,3117.3333333333335" size="100,100">You gave up and returned upstairs. &quot;I shouldn&#39;t be doing this anyway, plus this password is too difficult.&quot; 
+(link: &quot;Play Again&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="62" name="Give up and return" tags="" position="1005,3117" size="100,100">You gave up and returned upstairs. &quot;I shouldn&#39;t be doing this anyway, plus this password is too difficult.&quot; 
 
 After a while, Oculi came back with a feast. All of your favourite foods are there: Ramen, pizzas, burgers, cakes and wine.
 
