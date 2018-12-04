@@ -130,7 +130,15 @@ enchantment-link.visited:hover, tw-link.visited:hover {
 
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
 
 
 
@@ -169,7 +177,7 @@ Spent and exhausted, you fell to your knees and die of exhaustion.
 (link: &quot;Play Again&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="4" name="Alien Killer Shelter" tags="" position="603,1676" size="100,100">Keeping the light before your eyes, you dragged your weary, aching feet as quickly as you could towards the spot. After hours of walking, you came to an extravagant looking biodome made of fiber glass. 
 
 [[Approach the biodome and ask for help|Ask For Help]]</tw-passagedata><tw-passagedata pid="5" name="Title" tags="" position="635,3" size="200,100">&lt;h2&gt;Keeping Up with the Cardassians&lt;/h2&gt;
-[[Play Game|Naming]]</tw-passagedata><tw-passagedata pid="6" name="Genetic Lottery" tags="" position="667,257" size="100,100">(set: $strength to (random: 1, 10))(set: $charisma to (random: 1, 10))(set: $intelligence to (random: 1, 10))(set: $endurance to (random: 1, 10))(set: $perception to (random: 1, 10))(set: $agility to (random: 1, 10))(set: $luck to (random: 1, 10))(set:$eyecolour to (either: &quot;Blue&quot;, &quot;Brown&quot;, &quot;Green&quot;, &quot;Grey&quot;))(set:$haircolour to (either: &quot;Brown&quot;,&quot;Black&quot;,&quot;Blonde&quot;,&quot;Red&quot;))(set: $talent to (either: &quot;Hacking&quot;, &quot;Being the Life of the Party and charming everyone&quot;, &quot;Spacecraft&quot;))Your name is: &lt;span class = &quot;name&quot;&gt;(print: $name) &lt;/span&gt;
+[[Play Game|Naming]]</tw-passagedata><tw-passagedata pid="6" name="Genetic Lottery" tags="" position="663,257" size="100,100">(set: $strength to (random: 1, 10))(set: $charisma to (random: 1, 10))(set: $intelligence to (random: 1, 10))(set: $endurance to (random: 1, 10))(set: $perception to (random: 1, 10))(set: $agility to (random: 1, 10))(set: $luck to (random: 1, 10))(set:$eyecolour to (either: &quot;Blue&quot;, &quot;Brown&quot;, &quot;Green&quot;, &quot;Grey&quot;))(set:$haircolour to (either: &quot;Brown&quot;,&quot;Black&quot;,&quot;Blonde&quot;,&quot;Red&quot;))(set: $talent to (either: &quot;Hacking&quot;, &quot;Being the Life of the Party and charming everyone&quot;, &quot;Spacecraft&quot;))Your name is: &lt;span class = &quot;name&quot;&gt;(print: $name) &lt;/span&gt;
 
 You &lt;span class = &quot;stats&quot;&gt;strength&lt;/span&gt; is $strength, your &lt;span class = &quot;stats&quot;&gt;charisma &lt;/span&gt; is $charisma, your &lt;span class = &quot;stats&quot;&gt;intelligence &lt;/span&gt; is $intelligence, your &lt;span class = &quot;stats&quot;&gt;agility&lt;/span&gt; is $agility, your &lt;span class = &quot;stats&quot;&gt;endurance&lt;/span&gt; is $endurance, your &lt;span class = &quot;stats&quot;&gt;perception&lt;/span&gt; is $perception and your &lt;span class = &quot;stats&quot;&gt;luck &lt;/span&gt; is $luck.
 
@@ -215,6 +223,7 @@ Your &lt;span class = &quot;stats&quot;&gt;hair colour&lt;/span&gt; is $haircolo
 [[Start|The call to adventure]]
 [[Play the Genetic Lottery Again|Genetic Lottery]]
 [[Rename|Rename]] </tw-passagedata><tw-passagedata pid="12" name="Naming" tags="" position="684,131" size="100,100">(put: (prompt: &quot;What&#39;s your name?&quot;, &quot;&quot;) into $name)
+(if: $name is &quot;&quot;)[(reload:)]
 Your name is: &lt;span class = &quot;name&quot;&gt;(print: $name) &lt;/span&gt;
 [[Play the Genetic Lottery|Genetic Lottery]]</tw-passagedata><tw-passagedata pid="13" name="Confirm to Participate" tags="" position="661,862" size="100,100">**RE: Once in a lifetime opportunity: Keeping Up with the Martians**
 
@@ -439,9 +448,12 @@ There is a 6-digit password to the underground room.
 
 [[(Requires Hacking)Hack into it|Hack]]
 [[Guess the password|Guess the password]]
-[[(Strength)Smash the door open|Smash]]</tw-passagedata><tw-passagedata pid="57" name="Guess the password" tags="" position="878,3154" size="100,100">(set: $password to (prompt: &quot;What is the password? Hint: find a number of six digits of such a nature that if you transfer the two left-hand digits to the opposite end, the new number thus formed is exactly double the original number.&quot;,&quot;&quot;) )
+[[(Requires Strength)Smash the door open|Smash]]</tw-passagedata><tw-passagedata pid="57" name="Guess the password" tags="" position="874.6666666666666,3154" size="100,100">(set: $password to (prompt: &quot;What is the password? Hint: find a number of six digits of such a nature that if you transfer the two left-hand digits to the opposite end, the new number thus formed is exactly double the original number.&quot;,&quot;&quot;) )
 
-(if: $password is &quot;285714&quot;)[[[You are correct.The door is unlocked.|Correct Password]]](else:)[You are wrong. [[Try again-&gt;Guess the password]].]</tw-passagedata><tw-passagedata pid="58" name="Smash" tags="" position="705,3137" size="100,100">(Success)You smashed the door open with all of your force.
+(if: $password is &quot;285714&quot;)[[[You are correct.The door is unlocked.|Correct Password]]](else:)[You are wrong. 
+[[Try again-&gt;Guess the password]]
+[[(Requires Hacking)Hack into it|Hack]] 
+[[(Requires Strength)Smash the door open|Smash]]]</tw-passagedata><tw-passagedata pid="58" name="Smash" tags="" position="705,3137" size="100,100">(Success)You smashed the door open with all of your force.
 
 [[Proceed to the Underground Room|Correct Password]]</tw-passagedata><tw-passagedata pid="59" name="Correct Password" tags="" position="773,3311" size="100,100">The door opens.
 
